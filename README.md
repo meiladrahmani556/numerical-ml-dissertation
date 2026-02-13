@@ -1,137 +1,153 @@
-# Dissertation Project – Numerical Data Analysis & Machine Learning
+# Dissertation Project – Numerical Machine Learning Analysis
 
 ## 1. Project Overview
 
-This project focuses on the analysis of **numerical datasets** using machine learning techniques. The aim is to evaluate and compare supervised learning models on structured numerical data.
+This project focuses on the application of machine learning techniques to numerical datasets. The aim is to analyse real-world numerical data and compare the performance of multiple supervised machine learning models on a prediction or classification task.
 
-The project follows a complete data science pipeline, including project planning, dataset selection, exploratory data analysis (EDA), data preprocessing, model development, evaluation, and reporting.
+The project follows a structured machine learning workflow including dataset selection, exploratory data analysis (EDA), data preprocessing, model development, evaluation, and comparison.
 
-All work is implemented in Python using Jupyter Notebooks and tracked using GitHub.
+All work is implemented in Python using Jupyter Notebooks and tracked through GitHub version control.
 
-## 2. Project Aim
+## 2. Project Scope and Requirements
 
-The aim of this project is to apply machine learning techniques to numerical datasets and evaluate model performance using appropriate statistical and predictive metrics.
+This project has been designed to align with the agreed supervision requirements:
 
-## 3. Project Objectives
+- The dataset used is numerical in nature
+- The project applies supervised machine learning techniques
+- Multiple machine learning models are implemented and compared
+- A formal project plan is defined and followed
+- A shortlist of numerical datasets is proposed for approval
 
-- Prepare a formal project plan  
-- Propose a shortlist of five numerical datasets for discussion and approval  
-- Perform exploratory data analysis (EDA)  
-- Clean and preprocess numerical data  
-- Develop baseline machine learning models  
-- Improve model performance through tuning  
-- Evaluate and compare models  
-- Document findings and conclusions
+The project does not involve image or text-based data and focuses exclusively on structured numerical datasets.
 
-## 4. Repository Structure
+## 3. Repository Structure
 
 The repository is organised as follows:
 
-- notebooks/ – Jupyter notebooks for each project stage  
+- notebooks/ – Jupyter notebooks implementing each stage of the project  
 - data/ – Dataset directory (excluded via .gitignore)  
-- images/ – Figures and plots used in documentation  
 - README.md – Project documentation  
 
-The notebooks are numbered to reflect the logical workflow of the project.
+The notebooks are numbered to reflect the logical execution order of the project.
 
-## 5. How to Run This Repository
+## 4. How to Run This Repository
 
-1. Clone the repository from GitHub  
-2. Install the required Python packages  
-3. Place the selected dataset inside the data/ directory  
-4. Run the notebooks in numerical order  
-5. All notebooks are compatible with Google Colab  
+1. Clone the repository from GitHub.
+2. Install the required Python packages.
+3. Open the notebooks using Google Colab or Jupyter Notebook.
+4. Run the notebooks in numerical order inside the notebooks/ directory.
 
-## 6. Dataset Shortlist (Numerical)
+All notebooks are designed to be executable in Google Colab.
+
+## 5. Project Plan
+
+The project is structured into the following stages:
+
+1. Project setup and dataset selection  
+2. Exploratory Data Analysis (EDA)  
+3. Data cleaning and preprocessing  
+4. Baseline machine learning model  
+5. Improved models and hyperparameter tuning  
+6. Model comparison and evaluation  
+7. Discussion of results and limitations  
+
+This plan ensures steady progress towards the interim report and final dissertation submission.
+
+## 6. Proposed Numerical Dataset Shortlist
 
 The following numerical datasets are proposed for discussion and approval:
 
-1. House Prices Dataset – Regression  
-2. Wine Quality Dataset – Classification / Regression  
-3. Heart Disease Dataset – Classification  
-4. Student Performance Dataset – Regression / Classification  
-5. Energy Efficiency Dataset – Regression  
+1. California Housing Prices – Regression  
+2. UCI Wine Quality Dataset – Regression / Classification  
+3. UCI Heart Disease Dataset – Binary Classification  
+4. Credit Card Fraud Dataset (Kaggle) – Binary Classification  
+5. House Prices Dataset (Kaggle) – Regression  
 
-The final dataset will be selected following supervisor approval.
+Final dataset selection will be confirmed following supervisor approval.
 
 ## 7. Exploratory Data Analysis (EDA)
 
-Exploratory Data Analysis is conducted to understand the structure and characteristics of the dataset.
+Exploratory Data Analysis is conducted to understand the dataset structure and guide modelling decisions. This includes:
 
-This includes:
+- Dataset dimensions and feature overview  
 - Summary statistics  
+- Missing value analysis  
 - Feature distributions  
 - Correlation analysis  
-- Missing value inspection  
 
-Implemented in:
-notebooks/02_eda.ipynb
+EDA is implemented in:
+
+notebooks/02_exploratory_data_analysis.ipynb
 
 ## 8. Data Cleaning and Preprocessing
 
-This stage includes:
+Data preprocessing includes:
+
 - Handling missing values  
 - Feature scaling and normalisation  
-- Train-test splitting  
+- Encoding categorical variables (if present)  
+- Train, validation, and test splitting  
 
-This ensures the dataset is suitable for machine learning models.
+This ensures fair training and unbiased model evaluation.
 
 Implemented in:
-notebooks/03_preprocessing.ipynb
+
+notebooks/03_data_preprocessing.ipynb
 
 ## 9. Machine Learning Model Development
 
-Multiple supervised learning models are developed and compared, including:
+Multiple supervised machine learning models are developed and compared, including:
 
 - Linear / Logistic Regression  
 - Decision Trees  
-- Random Forest  
-- k-Nearest Neighbours (k-NN)  
+- Random Forests  
+- Support Vector Machines (SVM)  
 
-A baseline model is implemented first, followed by improved models using tuning techniques.
+Models are trained using consistent evaluation protocols to ensure fair comparison.
 
-Implemented in:
-notebooks/04_baseline_model.ipynb  
-notebooks/05_model_improvements.ipynb
+## 10. Model Evaluation Strategy
 
-## 10. Model Evaluation
+Model performance is evaluated using appropriate metrics such as:
 
-Models are evaluated using appropriate metrics, including:
-- Accuracy  
-- Precision, Recall, F1-score  
-- RMSE / MAE (for regression tasks)  
-- Confusion Matrix  
+- Accuracy (classification)
+- Precision, Recall, and F1-score
+- RMSE and MAE (regression)
+- Confusion matrices where applicable
 
-Evaluation results are used to compare model performance.
+Cross-validation and hyperparameter tuning are applied to improve generalisation performance.
 
-## 11. Tools and Technologies
+## 11. Python Packages Used
 
-- Python  
-- Jupyter Notebook / Google Colab  
+Key Python libraries used include:
+
 - NumPy  
 - Pandas  
+- Matplotlib  
+- Seaborn  
 - Scikit-learn  
-- Matplotlib / Seaborn  
-- GitHub  
+- Jupyter Notebook
 
-## 12. Version Control
+## 12. Version Control and Engagement
 
-All work is version-controlled using GitHub with regular commits.
+All work is tracked using GitHub with regular commits to demonstrate:
 
-The data/ directory is excluded from version control.
+- Continuous engagement  
+- Progressive project development  
+- Clear documentation and structure
 
 ## 13. Conclusions
 
-This project demonstrates a structured approach to numerical data analysis and machine learning following an end-to-end data science workflow.
+This project applies supervised machine learning techniques to numerical data using a structured and well-defined pipeline. Model comparison provides insight into the strengths and limitations of different algorithms on real-world numerical datasets.
 
 ## 14. Future Work
 
-- Advanced feature engineering  
-- Ensemble learning methods  
-- Cross-validation strategies  
-- Model deployment
+Future work may include:
 
-## 15. Known Issues
+- Advanced ensemble methods  
+- Feature selection techniques  
+- Model explainability methods  
+- Deployment of results using a simple interface
 
-No critical unresolved issues at the current stage of the project.
+## 15. Known Issues / Risks
 
+There are no unresolved technical issues at the current stage. Dataset selection is pending final supervisor approval.
