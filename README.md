@@ -2,152 +2,159 @@
 
 ## 1. Project Overview
 
-This project focuses on the application of machine learning techniques to numerical datasets. The aim is to analyse real-world numerical data and compare the performance of multiple supervised machine learning models on a prediction or classification task.
+This project focuses on the design, implementation, and evaluation of **numerical machine learning models** applied to structured tabular data. The aim is to analyse how different machine learning techniques perform on real-world numerical datasets using a clear, reproducible, and academically sound workflow.
 
-The project follows a structured machine learning workflow including dataset selection, exploratory data analysis (EDA), data preprocessing, model development, evaluation, and comparison.
+The project follows a standard machine learning pipeline including dataset selection, data cleaning, exploratory data analysis (EDA), feature preparation, model training, and evaluation. All work is implemented in **Python using Jupyter Notebooks** and version-controlled using **GitHub**.
 
-All work is implemented in Python using Jupyter Notebooks and tracked through GitHub version control.
+---
 
-## 2. Project Scope and Requirements
-
-This project has been designed to align with the agreed supervision requirements:
-
-- The dataset used is numerical in nature
-- The project applies supervised machine learning techniques
-- Multiple machine learning models are implemented and compared
-- A formal project plan is defined and followed
-- A shortlist of numerical datasets is proposed for approval
-
-The project does not involve image or text-based data and focuses exclusively on structured numerical datasets.
-
-## 3. Repository Structure
+## 2. Repository Structure
 
 The repository is organised as follows:
 
-- notebooks/ – Jupyter notebooks implementing each stage of the project  
-- data/ – Dataset directory (excluded via .gitignore)  
-- README.md – Project documentation  
+- `Notebook/` – Jupyter notebooks implementing each stage of the project  
+- `data/` – Numerical datasets (excluded from version control where appropriate)  
+- `README.md` – Project documentation  
 
 The notebooks are numbered to reflect the logical execution order of the project.
 
-## 4. How to Run This Repository
+---
 
-1. Clone the repository from GitHub.
-2. Install the required Python packages.
-3. Open the notebooks using Google Colab or Jupyter Notebook.
-4. Run the notebooks in numerical order inside the notebooks/ directory.
+## 3. Project Plan and Workflow
 
-All notebooks are designed to be executable in Google Colab.
+The project follows the structured workflow below:
 
-## 5. Project Plan
-
-The project is structured into the following stages:
-
-1. Project setup and dataset selection  
-2. Exploratory Data Analysis (EDA)  
+1. Project setup and environment configuration  
+2. Dataset selection and justification  
 3. Data cleaning and preprocessing  
-4. Baseline machine learning model  
-5. Improved models and hyperparameter tuning  
-6. Model comparison and evaluation  
-7. Discussion of results and limitations  
+4. Exploratory data analysis (EDA)  
+5. Baseline model development  
+6. Model evaluation and comparison  
+7. Discussion of results and conclusions  
 
-This plan ensures steady progress towards the interim report and final dissertation submission.
+This workflow ensures clarity, reproducibility, and alignment with academic best practice.
 
-## 6. Proposed Numerical Dataset Shortlist
+---
 
-The following numerical datasets are proposed for discussion and approval:
+## 4. Dataset Shortlist (Numerical Datasets)
 
-1. California Housing Prices – Regression  
-2. UCI Wine Quality Dataset – Regression / Classification  
-3. UCI Heart Disease Dataset – Binary Classification  
-4. Credit Card Fraud Dataset (Kaggle) – Binary Classification  
-5. House Prices Dataset (Kaggle) – Regression  
+In line with supervision guidance, a shortlist of **five numerical datasets** was considered:
 
-Final dataset selection will be confirmed following supervisor approval.
+1. **Wine Quality Dataset (UCI Machine Learning Repository)**  
+   - Physicochemical properties of wine  
+   - Regression task predicting wine quality score  
 
-## 7. Exploratory Data Analysis (EDA)
+2. **Boston Housing Dataset**  
+   - Socioeconomic and housing-related features  
+   - Regression task predicting house prices  
 
-Exploratory Data Analysis is conducted to understand the dataset structure and guide modelling decisions. This includes:
+3. **Diabetes Dataset (Scikit-learn)**  
+   - Medical diagnostic measurements  
+   - Regression task predicting disease progression  
 
-- Dataset dimensions and feature overview  
-- Summary statistics  
-- Missing value analysis  
-- Feature distributions  
-- Correlation analysis  
+4. **Auto MPG Dataset**  
+   - Vehicle technical characteristics  
+   - Regression task predicting fuel efficiency  
 
-EDA is implemented in:
+5. **Bank Marketing Dataset**  
+   - Customer demographic and financial attributes  
+   - Classification task predicting term deposit subscription  
 
-notebooks/02_exploratory_data_analysis.ipynb
+---
 
-## 8. Data Cleaning and Preprocessing
+## 5. Selected Dataset
 
-Data preprocessing includes:
+The **Wine Quality dataset** was selected for this project due to its numerical nature, moderate size, and widespread academic use.
 
+- Source: UCI Machine Learning Repository  
+- Data type: Numerical (tabular)  
+- Task: Regression (predicting wine quality score)  
+
+---
+
+## 6. Notebook 01 – Project Setup (Completed)
+
+This notebook establishes the project environment and scope.
+
+Key tasks:
+- Importing required Python libraries  
+- Verifying the execution environment (Google Colab compatible)  
+- Defining project objectives and structure  
+
+Implemented in:  
+`Notebook/01_project_setup.ipynb`
+
+---
+
+## 7. Notebook 02 – Dataset Loading and Inspection (Completed)
+
+This notebook loads the selected dataset and performs initial inspection.
+
+Key tasks:
+- Loading the Wine Quality dataset  
+- Inspecting dataset shape and structure  
+- Verifying feature names and data types  
+
+Implemented in:  
+`Notebook/02_dataset_loading.ipynb`
+
+---
+
+## 8. Notebook 03 – Data Cleaning and Preprocessing (Completed)
+
+This notebook prepares the dataset for modelling.
+
+Key tasks:
 - Handling missing values  
-- Feature scaling and normalisation  
-- Encoding categorical variables (if present)  
-- Train, validation, and test splitting  
+- Verifying numerical features  
+- Preparing clean feature and target variables  
 
-This ensures fair training and unbiased model evaluation.
+Implemented in:  
+`Notebook/03_data_cleaning.ipynb`
 
-Implemented in:
+---
 
-notebooks/03_data_preprocessing.ipynb
+## 9. Notebook 04 – Exploratory Data Analysis (EDA) (Completed)
 
-## 9. Machine Learning Model Development
+This notebook explores relationships within the dataset to inform modelling decisions.
 
-Multiple supervised machine learning models are developed and compared, including:
+Key tasks:
+- Descriptive statistics  
+- Correlation analysis  
+- Feature distribution visualisation  
 
-- Linear / Logistic Regression  
-- Decision Trees  
-- Random Forests  
-- Support Vector Machines (SVM)  
+Insights from EDA guide baseline model selection.
 
-Models are trained using consistent evaluation protocols to ensure fair comparison.
+Implemented in:  
+`Notebook/04_exploratory_data_analysis.ipynb`
 
-## 10. Model Evaluation Strategy
+---
 
-Model performance is evaluated using appropriate metrics such as:
+## 10. Next Steps
 
-- Accuracy (classification)
-- Precision, Recall, and F1-score
-- RMSE and MAE (regression)
-- Confusion matrices where applicable
+The next stage of the project will focus on **baseline model development**, including:
 
-Cross-validation and hyperparameter tuning are applied to improve generalisation performance.
+- Training numerical regression models  
+- Evaluating performance using metrics such as RMSE and R²  
+- Comparing model performance and analysing results  
 
-## 11. Python Packages Used
+---
 
-Key Python libraries used include:
+## 11. Tools and Libraries
+
+Key Python libraries used in this project include:
 
 - NumPy  
 - Pandas  
 - Matplotlib  
 - Seaborn  
 - Scikit-learn  
-- Jupyter Notebook
 
-## 12. Version Control and Engagement
+---
 
-All work is tracked using GitHub with regular commits to demonstrate:
+## 12. Project Status
 
-- Continuous engagement  
-- Progressive project development  
-- Clear documentation and structure
-
-## 13. Conclusions
-
-This project applies supervised machine learning techniques to numerical data using a structured and well-defined pipeline. Model comparison provides insight into the strengths and limitations of different algorithms on real-world numerical datasets.
-
-## 14. Future Work
-
-Future work may include:
-
-- Advanced ensemble methods  
-- Feature selection techniques  
-- Model explainability methods  
-- Deployment of results using a simple interface
-
-## 15. Known Issues / Risks
-
-There are no unresolved technical issues at the current stage. Dataset selection is pending final supervisor approval.
+- Project scope defined  
+- Numerical dataset shortlisted and selected  
+- Notebooks 01–04 completed  
+- Ready to proceed to baseline model development  
