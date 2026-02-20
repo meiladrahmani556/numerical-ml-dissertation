@@ -130,17 +130,35 @@ Implemented in:
 
 ---
 
-## 10. Next Steps
+## 10. Notebook 05 – Baseline Model Development (Completed)
 
-The next stage of the project will focus on **baseline model development**, including:
+This notebook implements baseline numerical machine learning models to establish performance benchmarks.
 
-- Training numerical regression models  
-- Evaluating performance using metrics such as RMSE and R²  
-- Comparing model performance and analysing results  
+Key tasks:
+- Splitting data into training and testing sets  
+- Training baseline regression models  
+- Evaluating models using RMSE and R² metrics  
+- Establishing baseline performance for future comparison  
+
+These results provide a reference point for more advanced models and tuning in later stages.
+
+Implemented in:  
+`Notebook/05_baseline_models.ipynb`
 
 ---
 
-## 11. Tools and Libraries
+## 11. Next Steps
+
+The next stages of the project will focus on improving model performance and deepening analysis:
+
+- Advanced regression models (e.g. Random Forest, Gradient Boosting)
+- Hyperparameter tuning and cross-validation
+- Model comparison and selection
+- Interpretation of results and discussion
+- Final conclusions and recommendations
+---
+
+## 12. Tools and Libraries
 
 Key Python libraries used in this project include:
 
@@ -152,9 +170,12 @@ Key Python libraries used in this project include:
 
 ---
 
-## 12. Project Status
+## 13. Project Status
 
-- Project scope defined  
-- Numerical dataset shortlisted and selected  
-- Notebooks 01–05 completed  
-- Ready to proceed to baseline model development  
+- Project scope defined and approved as numerical ML  
+- Five numerical datasets shortlisted  
+- Wine Quality dataset selected  
+- Data cleaning and preprocessing completed  
+- Exploratory data analysis completed  
+- Baseline regression models implemented  
+- Project on track for advanced modelling and evaluation
